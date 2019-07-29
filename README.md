@@ -100,10 +100,10 @@ and you have the environment variables properly set you should be able to to run
 ## run with node.js
 
 you can run the compiled C-executable.
-`./main`
+`./main`  
 ![](c.png)
 
-`node main.js`
+`node main.js`  
 ![](node_js.png)
 
 ## run in browser

@@ -29,7 +29,7 @@ asm.js is a subset of JavaScript designed to allow computer software written in 
 
 <https://en.wikipedia.org/wiki/Asm.js>
 
-##What is Webassembly?
+## What is Webassembly?
 
 WebAssembly is a new binary format for executing code on the web, allowing much faster start times (smaller download, much faster parsing in browsers) for Emscripten projects. Emscripten supports compiling to WebAssembly with a compiler flag, so it is easy for projects to target both WebAssembly and asm.js.
 
@@ -41,7 +41,7 @@ WebAssembly is a new binary format for executing code on the web, allowing much 
 
 <https://medium.com/@robaboukhalil/hit-the-ground-running-with-webassembly-56cf9b2fa35d>
 
-###binaryen
+### binaryen
 
 Binaryen is a WebAssembly compiler toolkit, which Emscripten uses to modify and optimize wasm.
 

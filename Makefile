@@ -1,7 +1,7 @@
 CC       = gcc
 JS_CC    = emcc
-JFLAGS   = -v
-CFLAGS   = -Wall -Wextra -mtune=native
+JSFLAGS   = -v
+CFLAGS   = -Wall -Wextra -mtune=native -no-pie
 LDFLAGS  = 
 
 .SUFFIXES:
@@ -24,14 +24,6 @@ main.js: main.c
 
 main.html: main.c
 	$(JS_CC) $< -o $@
-# use firefox main.html
-
-# nweb is a small and very safe mini web server
-# Nigel Griffiths
-nweb: nweb23.c
-	$(CC) $(CFLAGS) -o $@ $+ $(LDFLAGS)
-# gcc -O -DLINUX nweb.c -o nweb
-# ./nweb 8080 ./
 
 .PHONY: clean
 clean:
